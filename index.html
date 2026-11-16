@@ -1,10 +1,10 @@
 <!doctype html><html lang="pt-BR"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Extrator de Roteiros</title>
-<meta name="description" content="Mande o vídeo de um anúncio e receba o roteiro minutado, a análise e a versão adaptada ao seu nicho.">
-<meta property="og:title" content="Extrator de Roteiros · Alynne & Gustavo Quirino">
-<meta property="og:description" content="Mande o vídeo de um anúncio e receba o roteiro minutado, a análise e a versão adaptada ao seu nicho.">
+<title>Bônus da palestra · Máquina de Criativos</title>
+<meta name="description" content="Os bônus da palestra Máquina de Criativos e Ascensão: o Extrator de Roteiros e as máquinas de edição e de subida de anúncios.">
+<meta property="og:title" content="Bônus da palestra · Alynne & Gustavo Quirino">
+<meta property="og:description" content="Extrator de Roteiros + as máquinas de edição e de subida de anúncios, abertas no GitHub.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800;900&family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
 <style>
@@ -34,6 +34,15 @@ section{display:flex;flex-direction:column;gap:18px}
 .btn-ghost{background:transparent;color:var(--paper);border:1px solid var(--line)}
 .btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
 .note{font-size:14px;color:var(--mute)}
+.bonus{background:var(--panel);border:1px solid var(--g);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 0 50px rgba(61,255,138,.12)}
+.bonus h2{margin:0}
+.mach{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mach>div{background:#030504;border:1px solid var(--line);border-radius:14px;padding:14px}
+.mach .k{font-family:var(--mono);font-size:12px;color:var(--g);letter-spacing:.1em}
+.mach .t{font-weight:800;margin-top:4px;line-height:1.3}
+.mach .d{font-size:14px;color:var(--soft);margin-top:4px;line-height:1.45}
+.jump{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.jump a{font-family:var(--mono);font-size:13px;color:var(--paper);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px}
 
 .steps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px;background:var(--panel)}
@@ -65,7 +74,26 @@ footer .h{font-family:var(--display);font-weight:800;font-size:18px}
 <main>
   <header>
     <div class="eye">Bônus · Máquina de Criativos e Ascensão</div>
-    <h1>Extrator de <span class="g">Roteiros</span></h1>
+    <h1>Os bônus da <span class="g">palestra</span></h1>
+    <p class="lead">Tudo o que a gente mostrou no palco, liberado: o Extrator de Roteiros e as duas máquinas que editam e sobem os anúncios.</p>
+    <nav class="jump"><a href="#maquinas">↓ Máquinas de ads</a><a href="#extrator">↓ Extrator de Roteiros</a></nav>
+  </header>
+
+  <section id="maquinas" class="bonus">
+    <div class="eye">Bônus 2 · Repositório aberto</div>
+    <h2>Máquinas de Ads com IA</h2>
+    <p>As duas máquinas da palestra, rodando no Claude Code ou no Codex. Você conversa em português e a IA roda os scripts por você.</p>
+    <div class="mach">
+      <div><div class="k">MÁQUINA 01</div><div class="t">Edição</div><div class="d">Takes crus do celular viram anúncio vertical: cortes, legenda dinâmica, cenas de apoio, trilha por emoção.</div></div>
+      <div><div class="k">MÁQUINA 02</div><div class="t">Meta Ads</div><div class="d">Sobe os vídeos em campanha CBO, 3 a 4 por conjunto, e ativa os aprovados.</div></div>
+    </div>
+    <a class="btn btn-main" href="https://github.com/gufsquirino/maquinas-de-ads-ia" target="_blank" rel="noopener">Abrir o repositório no GitHub →</a>
+    <p class="note">O passo a passo de instalação está no próprio repositório. A edição roda no Mac; a subida de anúncios roda em qualquer computador com Python.</p>
+  </section>
+
+  <header id="extrator" style="margin-bottom:-28px">
+    <div class="eye">Bônus 1</div>
+    <h2 style="font-size:clamp(30px,8vw,44px)">Extrator de <span class="g">Roteiros</span></h2>
     <p class="lead">Você manda o vídeo de um anúncio que está vendendo. Ele devolve o roteiro minutado, explica por que funciona e reescreve tudo para o seu nicho.</p>
   </header>
 
